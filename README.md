@@ -4,16 +4,9 @@ ion-autocomplete
 
 :warning: Please follow the [Guidelines to report an issue](#guidelines-to-report-an-issue)
 
-#How to Use
-
-you can install with NPM :
-
-`npm install git+https://git@github.com/tunathoni/ion-autocomplete.git`
-
 #Table of contents
 
 - [Demo](#demo)
-- [Introduction](#introduction)
 - [Features](#features)
 - [Installation](#installation)
 - [Ionic compatibility](#ionic-compatibility)
@@ -56,10 +49,6 @@ You can find a live demo on [Codepen](http://codepen.io/guylabs/pen/GJmwMw) or s
 
 ![Animated demo](https://github.com/guylabs/ion-autocomplete/raw/master/demo.gif)
 
-# Introduction
-
-For one of my private projects I needed an autocomplete component in Ionic. I searched a lot and found some plain Angular autocompletes, but these had too much other dependencies and mostly didn't look that good within Ionic. Then one day I stumbled upon the [ion-google-place](https://github.com/israelidanny/ion-google-place) project which was exactly what I was looking for, except that it was just working with the Google Places API. So I forked the project and made it configurable such that you can add the service you need. The differences between the ion-google-place project and the ion-autocomplete are listed in the features.
-
 # Features
 
 The ion-autocomplete component has the following features:
@@ -74,9 +63,9 @@ The ion-autocomplete component has the following features:
 
 # Installation
 
-1. Use bower to install the new module:
+1. Use npm to install the new module:
 ```bash
-bower install ion-autocomplete --save
+npm install git+https://git@github.com/tunathoni/ion-autocomplete.git
 ```
 2. Import the `ion-autocomplete` javascript and css file into your HTML file:
 ```html
