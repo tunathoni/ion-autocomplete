@@ -109,6 +109,14 @@ angular.module('ion-autocomplete', []).directive('ionAutocomplete', [
                     '<ion-item class="item-divider" ng-if="viewModel.searchItems.length > 0">{{viewModel.selectItemsLabel}}</ion-item>',
                     
                     '<div ng-repeat="item in viewModel.searchItems track by $index">',
+                    
+                    '<div ng-if="item.disabled === undefined">',
+                    '<ion-item item-height="55px" item-width="100%" ng-click="viewModel.selectItem(item)" class="item-text-wrap">',
+                    '{{viewModel.getItemValue(item, viewModel.itemViewValueKey)}}',
+                    '</ion-item>',
+                    '</div>',
+                    
+                    '<div ng-if="item.disabled !== undefined">',
                     '<div ng-if="item.disabled == true">',
                     '<ion-item style = "color:blue;" item-height="55px" item-width="100%" ng-click="viewModel.selectItem(item)" class="item-text-wrap">',
                     '{{viewModel.getItemValue(item, viewModel.itemViewValueKey)}}',
@@ -119,6 +127,8 @@ angular.module('ion-autocomplete', []).directive('ionAutocomplete', [
                     '{{viewModel.getItemValue(item, viewModel.itemViewValueKey)}}',
                     '</ion-item>',
                     '</div>',
+                    '</div>',
+                    
                     '</div>',
                     
                     '</ion-content>',
