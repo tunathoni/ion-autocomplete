@@ -63,11 +63,18 @@ The ion-autocomplete component has the following features:
 
 # Installation
 
-1. Use npm to install the new module:
+1. Use bower to install the new module:
 ```bash
-npm install git+https://git@github.com/tunathoni/ion-autocomplete.git
+bower install 'git://github.com/tunathoni/ion-autocomplete.git'
 ```
-2. Add `ion-autocomplete` as a dependency on your Ionic app:
+
+2. Import the `ion-autocomplete` javascript and css file into your HTML file:
+```html
+<script src="lib/ion-autocomplete/dist/ion-autocomplete.js"></script>
+<link href="lib/ion-autocomplete/dist/ion-autocomplete.css" rel="stylesheet">
+```
+
+3. Add `ion-autocomplete` as a dependency on your Ionic app:
 ```javascript
 angular.module('myApp', [
   'ionic',
